@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hey You 💘</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background-color: #ff6f91;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff3f6c;
+    }
+    #response {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #d6336c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hey, Cutie 💕</h1>
+  <p>I made this just for you. Wanna know a secret?</p>
+  <button onclick="showLove()">Click Me</button>
+  <div id="response"></div>
+
+  <script>
+    function showLove() {
+      const messages = [
+        "I think you're amazing 😍",
+        "You make my day brighter ☀️",
+        "I smile every time I think of you 😊",
+        "You're kinda my favorite person 💖",
+        "Just wanted to say... I like you. A lot 💌"
+      ];
+      const random = Math.floor(Math.random() * messages.length);
+      document.getElementById("response").textContent = messages[random];
+    }
+  </script>
+
+</body>
+</html>
